@@ -1,0 +1,251 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+  }
+  
+  body {  
+    height: 100vh;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.7s;
+    padding: 37px 80px;
+    z-index:30;
+    background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+  }
+  
+  header.sticky {
+    padding: 7px 100px;
+    background:#fff;
+  }
+  
+  header .logo {
+    position: relative;
+    font-weight: 700;
+    color: green;
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: 1px;
+    transition: 0.7s;
+    font-weight: bold;
+    font-family: "Great Vibes", sans-serif;
+  }
+  .nav-bar{
+      display:flex;
+      z-index:20;
+      font-weight: bold;
+  }
+  header nav ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header nav ul li {
+    position: relative;
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: tomato;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 700px;
+    transition: 0.7s;
+  }
+  
+  header nav ul li a:hover {
+    border-bottom:2px solid tomato;
+  }
+  
+  /* header.sticky .logo,
+  header.sticky ul li a {
+    color: black;
+  }  */
+  .login-btn{
+    padding:13px;
+    font-size:16px;
+    background-color:transparent;
+    color:tomato;
+    border-radius: 5px;
+    border:1px solid tomato;
+    transition: all .5s;
+  }
+  .login-btn:hover{
+    color:#fff;
+    background-color:tomato
+  }
+  .banner {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    margin-top:110px;
+  } 
+  
+  .slideshow-container{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  .div1,
+  .div2,
+  .div3 {
+    width: 100%;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    filter: brightness(50%);
+  }
+  
+  .div1 {
+    background-image: url("https://images.unsplash.com/photo-1507643179773-3e975d7ac515?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+  }
+  
+  .div2 {
+    background-image: url("https://abbozzogallery.com/abb18/wp-content/uploads/2019/08/wide-angle-gallery-collective-remix.jpg");
+  }
+  
+  .div3 {  
+    background-image: url("https://www.savingnspending.com/wp-content/uploads/2016/03/dsc0017-9.jpg");
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    top: 50%;
+    margin-top: -22px;
+    color: white;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 30px;
+    transition: background-color 0.6s ease-in-out;
+    border-radius: 5px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.7;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* end of header 1*/
+  
+  /* banner gallery button */
+   *:before, *:after {
+    transition:.5s linear;
+  } 
+
+  .gallery-button {
+    position: fixed;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } 
+
+  .gallery-button a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+  }
+  .gallery-button span {
+    display: block;
+    position: relative;
+    padding: 20px 30px;
+    margin: 0 15px;
+    color: #EF6B30;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .gallery-button a:before, .gallery-button a:after, .gallery-button span:before, .gallery-button span:after, .gallery-button div:before, .gallery-button div:after {
+    content: "";
+    position: absolute;
+    background: #EFF5E6;
+  }
+  .gallery-button div:before {
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+  }
+  .gallery-button div:after {
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+  }
+  .gallery-button a:before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+  }
+  .gallery-button a:after {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+  }
+  .gallery-button span:before {
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+  }
+  .gallery-button span:after {
+    bottom: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+  }
+  .gallery-button div:hover:before, .gallery-button div:hover:after, .gallery-button span:hover:before, span:hover:after {
+    height: 0;
+  }
+  .gallery-button a:hover:before, .gallery-button a:hover:after {
+    width: 0;
+  } 
+  /* end of banner */
+
