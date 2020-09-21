@@ -16,6 +16,7 @@ header {
   padding: 20px;
   width: 100%;
   height: 60px;
+  z-index: 20;
 }
 .left-area h3 {
   color: #fff;
@@ -260,6 +261,10 @@ label #sidebar_btn:hover {
   margin-top: 450px;
   position: relative;
 }
+.table-container-category {
+  margin-top: 300px;
+  position: relative;
+}
 .content-table {
   border-collapse: collapse;
   margin: 25px 0;
@@ -304,6 +309,9 @@ label #sidebar_btn:hover {
 .content-table tbody tr:last-of-type {
   border-bottom: tomato solid 1px;
 }
+.content-table img {
+  padding: 10px 5px;
+}
 .fa-trash {
   font-size: 25px;
   font-weight: bold;
@@ -332,6 +340,11 @@ label #sidebar_btn:hover {
   justify-content: center;
   align-items: center;
   display: none;
+}
+.bg-modal-add-photo,
+.bg-modal-edit-photo,
+.bg-modal-delete-photo {
+  margin-top: -540px;
 }
 .add-photo-modal-content,
 .edit-photo-modal-content,
