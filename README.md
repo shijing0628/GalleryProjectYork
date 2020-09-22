@@ -14,8 +14,8 @@ add/edit/view/delete category.
 
 home page - brenda (home.html)
 contact page - maksim
-about us page - Celina
-category grid list page - Celina
+about us page - Celina --Brenda did for now
+category grid list page - Celina-- Brenda did for now
 gallery image page -brenda (gallery2.html)
 admin login page -maksim
 admin sign up page -maksim
