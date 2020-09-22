@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  background: url("https://s-media-cache-ak0.pinimg.com/736x/f4/ac/6a/f4ac6aac3afb587f6cae04155656fca3.jpg");
+  font-size: 18px;
+  font-weight: 300;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.7s;
+  padding: 37px 80px;
+  z-index: 30;
+  background-image: linear-gradient(
+    to top,
+    lightgrey 0%,
+    lightgrey 1%,
+    #e0e0e0 26%,
+    #efefef 48%,
+    #d9d9d9 75%,
+    #bcbcbc 100%
+  );
+}
+
+header.sticky {
+  padding: 7px 100px;
+  background: #fff;
+}
+
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color: green;
+  text-decoration: none;
+  font-size: 2em;
+  letter-spacing: 1px;
+  transition: 0.7s;
+  font-weight: bold;
+  font-family: "Great Vibes", sans-serif;
+}
+.nav-bar {
+  display: flex;
+  z-index: 20;
+  font-weight: bold;
+  margin-right: 100px;
+}
+header nav ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav ul li {
+  position: relative;
+  list-style: none;
+}
+
+header nav ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: tomato;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 700px;
+  transition: 0.7s;
+}
+
+header nav ul li a:hover {
+  border-bottom: 2px solid tomato;
+}
+
+/* header.sticky .logo,
+  header.sticky ul li a {
+    color: black;
+  }  */
+.login-btn {
+  padding: 13px;
+  font-size: 16px;
+  background-color: transparent;
+  color: tomato;
+  border-radius: 5px;
+  border: 1px solid tomato;
+  transition: all 0.5s;
+}
+.login-btn:hover {
+  color: #fff;
+  background-color: tomato;
+}
+
+.container {
+  display: flex;
+}
+
+.panels {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+.panel {
+  display: flex;
+  background: #6b0f9c;
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background 0.2s;
+  font-size: 20px;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.panel1 {
+  background-image: url("/images/p9.jpg");
+  filter: brightness(0.8);
+}
+.panel2 {
+  background-image: url("/images/p10.jpg");
+  filter: brightness(0.8);
+}
+.panel3 {
+  background-image: url("/images/p11.jpg");
+  filter: brightness(0.8);
+}
+.panel4 {
+  background-image: url("/images/p12.jpg");
+  filter: brightness(0.8);
+}
+
+.panel > * {
+  display: flex;
+  margin: 0;
+  width: 100%;
+  transition: transform 0.5s;
+
+  flex: 0 1 auto;
+  justify-content: center;
+  align-items: center;
+}
+.panel > *:nth-child(2) {
+  font-family: "Great Vibes";
+}
+.panel > *:first-child {
+  transform: translateY(-800%);
+}
+.panel.open-active > *:first-child {
+  transform: translateY(0);
+}
+.panel > *:last-child {
+  transform: translateY(300%);
+}
+.panel.open-active > *:last-child {
+  transform: translateY(0);
+}
+.panel p {
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.7), 0 0 14px rgba(0, 0, 0, 0.45);
+  font-size: 1.5em;
+}
+
+.panel p:nth-child(2) {
+  font-size: 3em;
+}
+
+.panel.open {
+  flex: 5;
+  font-size: 40px;
+}
+
+.cta {
+  color: white;
+  text-decoration: none;
+}
+.panel-read-more {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.read-more-btn {
+  margin-top: 25px;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  border-radius: 15px;
+  border: none;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+}
+.read-more-btn:hover {
+  background-image: linear-gradient(20deg, #fda085 100%, #f6d365 0%);
+}
