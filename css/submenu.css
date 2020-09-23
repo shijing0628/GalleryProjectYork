@@ -1,0 +1,75 @@
+:root {
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* links submenu*/
+.submenu {
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 33;
+  display: none;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.submenu::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.submenu.show {
+  display: block;
+}
+
+.submenu-center {
+  display: grid;
+  gap: 0.25rem 2rem;
+}
+.col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.submenu h4 {
+  margin-bottom: 1.5rem;
+}
+.submenu-center a {
+  width: 10rem;
+  display: block;
+  color: tomato;
+  text-transform: capitalize;
+}
+.submenu-center i {
+  color: yellowgreen;
+  margin-right: 1rem;
+}

@@ -394,6 +394,7 @@ label #sidebar_btn:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 20px;
 }
 .add-photo-modal-content .container form input,
 .add-photo-modal-content .container form select,

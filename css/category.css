@@ -115,13 +115,11 @@ h1 {
   width: 70%;
   margin: 0 auto;
   margin-top: 150px;
-  height: calc(100vh - 150px);
 }
 .category-wrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: calc(100vh - 150px);
 }
 
 .category-wrap .item {
@@ -156,7 +154,7 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("/images/p8.jpg");
+  background-image: url("/images/p14.jpg");
   background-position: center;
   transition: filter(0.5s ease-in-out);
   object-fit: cover;
@@ -169,7 +167,7 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  background-image: url("/images/p8.jpg");
+  background-image: url("/images/p14.jpg");
   background-position: center;
   transition: box-shadow 0.5s ease-in-out;
   transition: filter 0.7s;
@@ -177,7 +175,7 @@ h1 {
 .container-1 .layer1:hover {
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
   cursor: pointer;
-  filter: brightness(1.8);
+  filter: brightness(1.2);
 }
 .container-1 .layer1:hover ~ .container-1 .layer2 {
   filter: blur(5px);
