@@ -2,63 +2,116 @@
 <html lang="en">
 
 <head>
- <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <!-- font-family: 'Raleway', sans-serif; great vibes-->
- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="css/contact.css">
- <title>Contact us</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- font-family: 'Raleway', sans-serif; great vibes-->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Contact us</title>
+    <style>
+        {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            padding-top: 100px;
+
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
 </head>
 
 <body>
 
- <!-- header area -->
- <!-- <header>
+    <!-- header area -->
+    <!-- <header>
         
         <div class="left-area">
             <h3>Contact<span>us</span></h3>
         </div>
         <div class="right_area">
-            <a href="index.html" class="logout-btn">Logout</a>
         </div>
+    </header> -->
+    <header>
+        <a href="index.html" class="logo">Art Gallery</a>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="category.html" class="link-btn">Photo Gallery</a></li>
+                <li><a href="about.html" class="link-btn">About Us</a></li>
+                <li><a href="contact.html" class="link-btn">Contact Us</a></li>
+            </ul>
+            <a href="adminlogin.html"><button type="button" class="login-btn">Admin Login</button></a>
+        </nav>
     </header>
-     -->
- <header>
-  <a href="index.html" class="logo">Art Gallery</a>
-  <nav class="nav-bar">
-   <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="category.html" class="link-btn">Photo Gallery</a></li>
-    <li><a href="about.html" class="link-btn">About Us</a></li>
-    <li><a href="contact.html" class="link-btn">Contact Us</a></li>
-   </ul>
-   <a href="admin-main.html"><button type="button" class="login-btn">Admin Login</button></a>
-  </nav>
- </header>
+    <!--contact info and map-->
+    <div class="row">
+        <div class="column"">
+            <form action="" method=" post">
+            <div>
+                <label for="name">Name:</label>
+                <input id="firstname" type="text" name="firstname" required>
+            </div>
+            <div>
+                <label for="email">Your Email Address:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div>
+                <label for="Message">Message</label>
+                <textarea id="Message" name="Message" rows="4" cols="77" required></textarea>
+            </div>
+            <div>
+                <button type="submit" value="Submit">Submit</button>
+                <button type="reset" value="Reset">Reset</button>
+            </div>
+            </form>
+        </div>
+        <div class="column">
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="600" height="500" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 
- <!-- form area-->
- <form action="" method="post">
-  <div>
-   <label for="name">Name:</label>
-   <input id="firstname" type="text" name="firstname" required>
-  </div>
-  <div>
-   <label for="email">Your Email Address:</label>
-   <input type="email" id="email" required>
-  </div>
-  <div>
-   <label for="Message">Message</label>
-   <textarea id="Message" name="Message" rows="4" cols="77" required></textarea>
-  </div>
-  <div>
-   <button type="submit" value="Submit">Submit</button>
-   <button type="reset" value="Reset">Reset</button>
-  </div>
- </form>
+                </div>
+                <style>
+                    .mapouter {
+                        position: relative;
+                        text-align: right;
+                        height: 500px;
+                        width: 600px;
+                        padding-top: 50px;
+                    }
 
+                    .gmap_canvas {
+                        background: none !important;
+                        height: 500px;
+                        width: 600px;
+                    }
+                </style>
+            </div>
+            <Style>
+                h2 {
+                    padding-top: 100px
+                }
+            </Style>
+            <h2>Our address</h2>
+            <p>123 North Pole Dr, North Pole, NP, Arctica 1A1 A1A <br>Tel. +1(777)222-1111 <br> Email <a
+                    href="info@gallery.ar">email</a></p>
+        </div>
+
+    </div>
 </body>
 
 </html>

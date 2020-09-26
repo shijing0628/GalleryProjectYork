@@ -163,29 +163,29 @@ header nav ul li a:hover {
   font-family: "Great Vibes";
   font-weight: 500;
   color: tomato;
-  margin: 15 auto;
+  margin: 15px auto;
 }
 .panel > *:first-child {
   transform: translateY(-1200%);
-  color: whitesmoke;
+  color: white;
   font-weight: bold;
 }
 .panel.open-active > *:first-child {
-  transform: translateY(0);
+  transform: translateY(-100%);
 }
 .panel > *:last-child {
   transform: translateY(300%);
 }
 .panel.open-active > *:last-child {
-  transform: translateY(0);
+  transform: translateY(40%);
   background-color: white;
 }
 .panel p {
-  font-size: 1em;
+  font-size: 30px;
 }
 
 .panel p:nth-child(2) {
-  font-size: 3em;
+  font-size: 60px;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.7), 0 0 14px rgba(0, 0, 0, 0.45);
 }
 
@@ -201,7 +201,7 @@ header nav ul li a:hover {
   align-items: center;
   text-shadow: none;
   color: black;
-  font-size: 1.5rem;
+  font-size: 20px;
   padding: 15px 10px;
 }
 .read-more-btn {
