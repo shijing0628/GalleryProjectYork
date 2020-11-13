@@ -1,49 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- font-family: 'Raleway', sans-serif; great vibes-->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style-admin.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style-admin.css" />
     <title>Admin Main</title>
-</head>
+  </head>
 
-<body>
-    <input type="checkbox" id="check">
+  <body>
+    <input type="checkbox" id="check" />
     <!-- header area -->
     <header>
-        <label for="check">
-            <i class="fa fa-bars" id="sidebar_btn"></i>
-        </label>
-        <div class="left-area">
-            <h3>Admin<span>Dashboard</span></h3>
-        </div>
-        <div class="right_area">
-            <a href="index.html" class="logout-btn">Logout</a>
-        </div>
+      <label for="check">
+        <i class="fa fa-bars" id="sidebar_btn"></i>
+      </label>
+      <div class="left-area">
+        <h3>Admin<span>Dashboard</span></h3>
+      </div>
+      <div class="right_area">
+        <a href="index.html" class="logout-btn">Logout</a>
+      </div>
     </header>
     <!-- sidebar start -->
     <div class="side-bar">
-        <center>
-            <img src="/images/profile-img.png" alt="my photo" class="profile_image">
-            <h4>Brenda</h4>
-        </center>
-        <a href="admin-main.html"><i class="fa fa-image"></i><span>Photo List</span></a>
-        <a href="admin-category.html"><i class="fa fa-list-alt"></i><span>Category List</span></a>
+      <center>
+        <img
+          src="/images/profile-img.png"
+          alt="my photo"
+          class="profile_image"
+        />
+        <h4>Brenda</h4>
+      </center>
+      <a href="admin-main.html"
+        ><i class="fa fa-image"></i><span>Photo List</span></a
+      >
+      <a href="admin-category.html"
+        ><i class="fa fa-list-alt"></i><span>Category List</span></a
+      >
     </div>
     <!-- dashboard content -->
 
     <div class="content">
-        <div class="top-container">
-            <h1>Category</h1>
-            <button type="button" class="add-photo-btn">Create Category</button>
-            <!-- search  -->
-            <!-- <div class="wrapper">
+      <div class="top-container">
+        <h1>Category</h1>
+        <button type="button" class="add-photo-btn">Create Category</button>
+        <!-- search  -->
+        <!-- <div class="wrapper">
     <div class="search_box">
      <div class="dropdown">
       <div class="default_option">All</div>
@@ -59,121 +75,130 @@
      </div>
     </div>
    </div> -->
-        </div>
-        <div class="table-container-category">
-            <table class="content-table">
-                <thead>
-                    <tr>
-                        <th>Collections Image</th>
-                        <th>Category Name</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="images/p3.jpg" width="100" height="100">
-                        </td>
-                        <td>Cateogry 1</td>
-                        <td><a href="#" class="edit-btn">Edit</a></td>
-                        <td><a href="#"><i class="fa fa-trash delete-btn"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="images/p4.jpg" width="100" height="100">
-                        </td>
-                        <td>Cateogry 1</td>
-                        <td><a href="#" class="edit-btn">Edit</a></td>
-                        <td><a href="#"><i class="fa fa-trash delete-btn"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="./images/p5.jpg" width="100" height="100">
-                        </td>
-                        <td>Cateogry 1</td>
-                        <td><a href="#" class="edit-btn">Edit</a></td>
-                        <td><a href="#"><i class="fa fa-trash delete-btn"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="images/p6.jpg" width="100" height="100">
-                        </td>
-                        <td>Cateogry 1</td>
-                        <td><a href="#" class="edit-btn">Edit</a></td>
-                        <td><a href="#"><i class="fa fa-trash delete-btn"></i></a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+      </div>
+      <div class="table-container-category">
+        <table class="content-table">
+          <thead>
+            <tr>
+              <th>Collections Image</th>
+              <th>Category Name</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="images/p3.jpg" width="100" height="100" />
+              </td>
+              <td>Cateogry1</td>
+              <td><a href="#" class="edit-btn">Edit</a></td>
+              <td>
+                <a href="#"><i class="fa fa-trash delete-btn"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/p4.jpg" width="100" height="100" />
+              </td>
+              <td>Cateogry2</td>
+              <td><a href="#" class="edit-btn">Edit</a></td>
+              <td>
+                <a href="#"><i class="fa fa-trash delete-btn"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="./images/p5.jpg" width="100" height="100" />
+              </td>
+              <td>Cateogry3</td>
+              <td><a href="#" class="edit-btn">Edit</a></td>
+              <td>
+                <a href="#"><i class="fa fa-trash delete-btn"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="images/p6.jpg" width="100" height="100" />
+              </td>
+              <td>Cateogry4</td>
+              <td><a href="#" class="edit-btn">Edit</a></td>
+              <td>
+                <a href="#"><i class="fa fa-trash delete-btn"></i></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <!-- add a product  pop up module section -->
     <div class="bg-modal">
-        <div class="add-photo-modal-content">
-            <div class="container">
-                <div class="top-container">
-                    <i class="fa fa-caret-left close-addphoto-btn"></i>
-                    <h1>Create Category</h1>
-                </div>
-                <form action="" method="POST">
-                    <label for="photo-name">Category Name:</label>
-                    <input type="text" name="username" id="photo-name" required>
-                    <label for="file-select">Upload Collection Image:</label>
-                    <input type="file" name="upload" id="file-select" required>
-                    <input type="submit" class="submit-photo-btn" />
-                </form>
-            </div>
+      <div class="add-photo-modal-content">
+        <div class="container">
+          <div class="top-container">
+            <i class="fa fa-caret-left close-addphoto-btn"></i>
+            <h1>Create Category</h1>
+          </div>
+          <form action="" method="POST">
+            <label for="photo-name">Category Name:</label>
+            <input type="text" name="username" id="photo-name" required />
+            <label for="file-select">Upload Collection Image:</label>
+            <input type="file" name="upload" id="file-select" required />
+            <input type="submit" class="submit-photo-btn" />
+          </form>
         </div>
+      </div>
     </div>
     <!-- edit photo in dashboard pop up window -->
     <div class="bg-modal-edit">
-        <div class="edit-photo-modal-content">
-            <div class="container">
-                <div class="top-container">
-                    <i class="fa fa-caret-left close-editphoto-btn"></i>
-                    <h1>Edit Category</h1>
-                </div>
-                <form action="" method="POST">
-                    <label for="photo-name">Update Category Name:</label>
-                    <input type="text" name="username" id="photo11" placeholder="photo one">
-                    <label for="file-select">Upload New Image of Collection:</label>
-                    <input type="file" name="upload" id="file22">
+      <div class="edit-photo-modal-content">
+        <div class="container">
+          <div class="top-container">
+            <i class="fa fa-caret-left close-editphoto-btn"></i>
+            <h1>Edit Category</h1>
+          </div>
+          <form action="" method="POST">
+            <label for="photo-name">Update Category Name:</label>
+            <input
+              type="text"
+              name="username"
+              id="photo11"
+              placeholder="category name..."
+            />
+            <label for="file-select">Upload New Image of Collection:</label>
+            <input type="file" name="upload" id="file22" />
 
-                    <!-- <label for="category-list">Choose a category:</label>
+            <!-- <label for="category-list">Choose a category:</label>
                     <select name="category-list" id="category44">
                         <option value="waterclolor">waterclolor</option>
                         <option value="oil-painting">oil-painting</option>
                         <option value="aryclic">Aryclic</option>
                     </select> -->
-                    <input type="submit" class="submit-photo-btn" />
-                </form>
-            </div>
+            <input type="submit" class="submit-photo-btn" />
+          </form>
         </div>
+      </div>
     </div>
-
 
     <!-- delete photo -->
     <div class="bg-modal-delete">
-        <div class="delete-photo-modal-content">
-            <div class="container">
-                <div class="top-container">
-                    <i class="fa fa-caret-left close-del-photo-btn"></i>
-                    <h1>Do you want to delete Category?</h1>
-                    <div class="del-content">
-                        <img src="images/p2.jpg" alt="" width="200" height="200">
-                        <div class="image-name">Category XXX</div>
-                        <div class="category-name">Category: oil-painting</div>
-                        <button type="button" class="del-btn">Delete</button>
-                    </div>
-
-                </div>
-
+      <div class="delete-photo-modal-content">
+        <div class="container">
+          <div class="top-container">
+            <i class="fa fa-caret-left close-del-photo-btn"></i>
+            <h1>Do you want to delete Category?</h1>
+            <div class="del-content">
+              <img src="images/p2.jpg" alt="" width="200" height="200" />
+              <div class="image-name">Category XXX</div>
+              <div class="category-name">Category: oil-painting</div>
+              <button type="button" class="del-btn">Delete</button>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <script type="text/javascript" src="js/admin.js"></script>
-</body>
-
+  </body>
 </html>

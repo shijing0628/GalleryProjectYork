@@ -1,12 +1,5 @@
-// Create product modal pop up
-document.querySelector(".add-photo-btn").addEventListener("click", function () {
-  document.querySelector(".bg-modal").style.display = "flex";
-});
-document
-  .querySelector(".close-addphoto-btn")
-  .addEventListener("click", function () {
-    document.querySelector(".bg-modal").style.display = "none";
-  });
+
+
 
 // edit product modal pop up
 var editItems = document.querySelectorAll(".edit-btn");
@@ -23,17 +16,17 @@ editItems.forEach((item) => {
 
 //delete photo in dashboard pop up window
 
-var deleteItems = document.querySelectorAll(".delete-btn");
-deleteItems.forEach((item) => {
-  item.addEventListener("click", function () {
-    document.querySelector(".bg-modal-delete").style.display = "flex";
-    document
-      .querySelector(".close-del-photo-btn")
-      .addEventListener("click", function () {
-        document.querySelector(".bg-modal-delete").style.display = "none";
-      });
-  });
-});
+// var deleteItems = document.querySelectorAll(".delete-btn");
+// deleteItems.forEach((item) => {
+//   item.addEventListener("click", function () {
+//     document.querySelector(".bg-modal-delete").style.display = "flex";
+//     document
+//       .querySelector(".close-del-photo-btn")
+//       .addEventListener("click", function () {
+//         document.querySelector(".bg-modal-delete").style.display = "none";
+//       });
+//   });
+// });
 
 // search drop down
 // var defaultOption = document.querySelector(".default_option");

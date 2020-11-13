@@ -1,231 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- font-family: 'Raleway', sans-serif; great vibes-->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style-admin.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style-admin.css" />
     <title>Admin Main</title>
-</head>
+  </head>
 
-<body>
-    <input type="checkbox" id="check">
+  <body>
+    <input type="checkbox" id="check" />
     <!-- header area -->
     <header>
-        <label for="check">
-            <i class="fa fa-bars" id="sidebar_btn"></i>
-        </label>
-        <div class="left-area">
-            <h3>Admin<span>Dashboard</span></h3>
-        </div>
-        <div class="right_area">
-            <a href="index.html" class="logout-btn">Logout</a>
-        </div>
+      <label for="check">
+        <i class="fa fa-bars" id="sidebar_btn"></i>
+      </label>
+      <div class="left-area">
+        <h3>Admin<span>Dashboard</span></h3>
+      </div>
+      <div class="right_area">
+        <a href="index.html" class="logout-btn">Logout</a>
+      </div>
     </header>
     <!-- sidebar start -->
     <div class="side-bar">
-        <center>
-            <img src="/images/profile-img.png" alt="my photo" class="profile_image">
-            <h4>Brenda</h4>
-        </center>
-        <a href="admin-main.html"><i class="fa fa-image"></i><span>Photo List</span></a>
-        <a href="admin-category.html"><i class="fa fa-list-alt"></i><span>Category List</span></a>
+      <center>
+        <img
+          src="/images/profile-img.png"
+          alt="my photo"
+          class="profile_image"
+        />
+        <h4>Brenda</h4>
+      </center>
+      <a href="admin-main.html"
+        ><i class="fa fa-image"></i><span>Photo List</span></a
+      >
+      <a href="admin-category.html"
+        ><i class="fa fa-list-alt"></i><span>Category List</span></a
+      >
     </div>
     <!-- dashboard content -->
 
     <div class="content">
-        <div class="top-container">
-            <h1>Photo</h1>
-            <button type="button" class="add-photo-btn">Create Photo</button>
-            <!-- search  -->
-            <div class="wrapper">
-                <div class="search_box">
-                    <div class="dropdown">
-                        <div class="default_option">All</div>
-                        <ul class="option_list">
-
-                            <li>Photo</li>
-                            <li>Category</li>
-                        </ul>
-                    </div>
-                    <div class="search_field">
-                        <input type="text" class="input" placeholder="Search">
-                        <i class="fa fa-search"></i>
-                    </div>
-                </div>
+      <div class="top-container">
+        <h1>Photo</h1>
+        <button type="button" class="add-photo-btn">Create Photo</button>
+        <!-- search  -->
+        <div class="wrapper">
+          <div class="search_box">
+            <div class="dropdown">
+              <div class="default_option">All</div>
+              <ul class="option_list">
+                <li>Photo</li>
+                <li>Category</li>
+              </ul>
             </div>
+            <div class="search_field">
+              <input type="text" class="input" placeholder="Search" />
+              <i class="fa fa-search"></i>
+            </div>
+          </div>
         </div>
-        <div class="table-container">
-            <table class="content-table">
-                <thead>
-                    <tr>
-                        <th>Image</th>
-                        <th>PhotoID</th>
-                        <th>Name</th>
-                        <th>Category</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="images/bg.jpg" width="100" height="100">
-                        </td>
-                        <td>Photo ID</td>
-                        <td>Photo 1</td>
-                        <td>watorcolor</td>
-                        <td><a href="#" class="edit-btn">Edit</a></td>
-                        <td><a href="#"><i class="fa fa-trash delete-btn"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="images/p7.jpg" width="100" height="100">
-                        </td>
-                        <td>Photo ID</td>
-                        <td>Photo 2</td>
-                        <td>watorcolor</td>
-                        <td><a href="#" class="edit-btn">Edit</a></td>
-                        <td><a href="#"><i class="fa fa-trash delete-btn"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="images/p8.jpg" width="100" height="100">
-                        </td>
-                        <td>Photo ID</td>
-                        <td>Photo 3</td>
-                        <td>watorcolor</td>
-                        <td><a href="#" class="edit-btn">Edit</a></td>
-                        <td><a href="#"><i class="fa fa-trash delete-btn"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="images/bg.jpg" width="100" height="100">
-                        </td>
-                        <td>Photo ID</td>
-                        <td>Photo 4</td>
-                        <td>watorcolor</td>
-                        <td><a href="#" class="edit-btn">Edit</a></td>
-                        <td><a href="#"><i class="fa fa-trash delete-btn"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="images/p5.jpg" width="100" height="100">
-                        </td>
-                        <td>Photo ID</td>
-                        <td>Photo 5</td>
-                        <td>watorcolor</td>
-                        <td><a href="#" class="edit-btn">Edit</a></td>
-                        <td><a href="#"><i class="fa fa-trash delete-btn"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="images/p2.jpg" width="100" height="100">
-                        </td>
-                        <td>Photo ID</td>
-                        <td>Photo 6</td>
-                        <td>watorcolor</td>
-                        <td><a href="#" class="edit-btn">Edit</a></td>
-                        <td><a href="#"><i class="fa fa-trash delete-btn"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="images/p1.jpg" width="100" height="100">
-                        </td>
-                        <td>Photo ID</td>
-                        <td>Photo 7</td>
-                        <td>Oil Painting</td>
-                        <td><a href="#" class="edit-btn">Edit</a></td>
-                        <td><a href="#"><i class="fa fa-trash delete-btn"></i></a></td>
-                    </tr>
+      </div>
+      <div class="table-container">
+        <table class="content-table">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>PhotoID</th>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody class="item-line">
+            <tr>
+              <td>
+                <img src="images/bg.jpg" width="100" height="100" />
+              </td>
+              <td>Photo ID</td>
+              <td>Photo 1</td>
+              <td>watorcolor</td>
+              <td><a href="#" class="edit-btn">Edit</a></td>
+              <td>
+                <a href="#"><i class="fa fa-trash delete-btn"></i></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-                </tbody>
-            </table>
-
-
-            <!-- add a product  pop up module section -->
-            <div class="bg-modal bg-modal-add-photo">
-                <div class="add-photo-modal-content">
-                    <div class="container">
-                        <div class="top-container">
-                            <i class="fa fa-caret-left close-addphoto-btn"></i>
-                            <h1>Create a Photo</h1>
-                        </div>
-                        <form action="" method="POST">
-                            <label for="photo-name">Photo Name:</label>
-                            <input type="text" name="username" id="photo-name" required>
-                            <label for="file-select">Upload Image:</label>
-                            <input type="file" name="upload" id="file-select" required>
-                            <label for="photo-ID">Photo ID:</label>
-                            <input type="text" name="username" id="photo-ID" required>
-                            <label for="category-list">Choose a category:</label>
-                            <select name="category-list" id="category-list">
-                                <option value="waterclolor">waterclolor</option>
-                                <option value="oil-painting">oil-painting</option>
-                                <option value="aryclic">Aryclic</option>
-                            </select>
-                            <input type="submit" class="submit-photo-btn" />
-                        </form>
-                    </div>
-                </div>
+        <!-- add a product  pop up module section -->
+        <div class="bg-modal bg-modal-add-photo">
+          <div class="add-photo-modal-content">
+            <div class="container">
+              <div class="top-container">
+                <i class="fa fa-caret-left close-addphoto-btn"></i>
+                <h1>Create a Photo</h1>
+              </div>
+              <form action="" method="POST">
+                <label for="photo-name">Photo Name:</label>
+                <input type="text" name="photoname" id="photo-name" required />
+                <label for="file-select">Upload Image:</label>
+                <input type="file" name="image" id="file-select" required />
+                <label for="photo-ID">Photo ID:</label>
+                <input type="text" name="id" id="photo-ID" required />
+                <label for="category-list">Choose a category:</label>
+                <select name="category" id="category-list">
+                  <option value="waterclolor">waterclolor</option>
+                  <option value="oil-painting">oil-painting</option>
+                  <option value="aryclic">Aryclic</option>
+                </select>
+                <input type="submit" class="submit-photo-btn" />
+              </form>
             </div>
-            <!-- edit photo in dashboard pop up window -->
-            <div class="bg-modal-edit bg-modal-edit-photo">
-                <div class="edit-photo-modal-content">
-                    <div class="container">
-                        <div class="top-container">
-                            <i class="fa fa-caret-left close-editphoto-btn"></i>
-                            <h1>Edit Photo</h1>
-                        </div>
-                        <form action="" method="POST">
-                            <label for="photo-name">Update Photo Name:</label>
-                            <input type="text" name="username" id="photo11" placeholder="photo one">
-                            <label for="file-select">Upload New Image:</label>
-                            <input type="file" name="upload" id="file22">
-                            <label for="photo-ID">Update Photo ID:</label>
-                            <input type="text" name="username" id="photo33" placeholder="1004">
-                            <!-- <label for="category-list">Choose a category:</label>
+          </div>
+        </div>
+        <!-- edit photo in dashboard pop up window -->
+        <div class="bg-modal-edit bg-modal-edit-photo">
+          <div class="edit-photo-modal-content">
+            <div class="container">
+              <div class="top-container">
+                <i class="fa fa-caret-left close-editphoto-btn"></i>
+                <h1>Edit Photo</h1>
+              </div>
+              <form action="" method="POST">
+                <label for="photo-name">Update Photo Name:</label>
+                <input
+                  type="text"
+                  name="username"
+                  id="photo11"
+                  placeholder="photo one"
+                />
+                <label for="file-select">Upload New Image:</label>
+                <input type="file" name="upload" id="file22" />
+                <label for="photo-ID">Update Photo Category:</label>
+                <input
+                  type="text"
+                  name="username"
+                  id="photo33"
+                  placeholder="Category name..."
+                />
+                <!-- <label for="category-list">Choose a category:</label>
                     <select name="category-list" id="category44">
                         <option value="waterclolor">waterclolor</option>
                         <option value="oil-painting">oil-painting</option>
                         <option value="aryclic">Aryclic</option>
                     </select> -->
-                            <input type="submit" class="submit-photo-btn" />
-                        </form>
-                    </div>
-                </div>
+                <input type="submit" class="submit-photo-btn" />
+              </form>
             </div>
-
-
-            <!-- delete photo -->
-            <div class="bg-modal-delete bg-modal-delete-photo">
-                <div class="delete-photo-modal-content">
-                    <div class="container">
-                        <div class="top-container">
-                            <i class="fa fa-caret-left close-del-photo-btn"></i>
-                            <h1>Do you want to delete Photo?</h1>
-                            <div class="del-content">
-                                <img src="images/p1.jpg" alt="" width="200" height="200">
-                                <div class="image-name">photo XXX</div>
-                                <div class="category-name">Category: oil-painting</div>
-                                <button type="button" class="del-btn">Delete</button>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <!-- delete photo -->
+        <div class="bg-modal-delete bg-modal-delete-photo">
+          <div class="delete-photo-modal-content">
+            <div class="container">
+              <div class="top-container">
+                <i class="fa fa-caret-left close-del-photo-btn"></i>
+                <h1>Do you want to delete Photo?</h1>
+                <div class="del-content">
+                  <img src="images/p1.jpg" alt="" width="200" height="200" />
+                  <div class="image-name">photo XXX</div>
+                  <div class="category-name">Category: oil-painting</div>
+                  <button type="button" class="del-btn">Delete</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-
     <script type="text/javascript" src="js/admin.js"></script>
-</body>
-
+    <script type="text/javascript" src="js/admin_control.js"></script>
+  </body>
 </html>
