@@ -1,6 +1,8 @@
 GalleryProjectYork
 
-Created By Brenda, Maksim, Celina
+Created By Brenda 2020-11-12
+
+FS 1000 - group 8 assignment
 
 This project is an Art Gallery website.
 
@@ -8,22 +10,10 @@ Including home page, contact us, category page and details list, admin managemen
 
 Home page uses sliders displaying overview of this gallery.
 
-Admin page can add/edit/view/delete individual photos and
+Admin page can add/edit/view/delete individual photos and save to local storage.
 
 add/edit/view/delete category.
 
-home page - brenda (home.html)
-contact page - maksim
-about us page - Celina --Brenda did for now
-category grid list page - Celina-- Brenda did for now
-gallery image page -brenda (gallery2.html)
-admin login page -maksim
-admin sign up page -maksim
-admin dashboard->photo list page -brenda (admin-main.html)
-admin add new photo page (pop up)brenda (admin-main.html)
-admin edit photo page (pop up)brenda (admin-main.html)
-admin delete photo page (pop up)brenda (admin-main.html)
-admin dashbaord-> category list page brenda (admin-category.html)
-admin add new catgory page (pop up) brenda (admin-category.html)
-admin edit cateogry page (pop up) brenda (admin-category.html)
-admin delete cateory page (pop up) brenda (admin-category.html)
+![](2020-11-12-19-13-11.png)
+
+![](2020-11-12-19-14-24.png)
